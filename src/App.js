@@ -58,8 +58,8 @@ class App extends React.Component {
     this.setState({imageUrl: this.state.input })
     var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
     targetUrl = 'https://www.de-vis-software.ro/maskerizer.aspx'
-    var user_name = 'sparsh chadha'
-    var password = 'Sushil1#'
+    var user_name = 'your_user_name'
+    var password = 'your_password'
 
     var encoded = btoa(user_name+":"+password)
 
