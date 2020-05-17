@@ -38,10 +38,12 @@ class App extends React.Component {
     var previous_url = image.src
     image.src = face
     if(pic != undefined || pic!= null){
-      document.getElementById('result_pass').innerHTML='<p>DETECTED</p>'
+      document.getElementById('result_pass').innerHTML='<p>FACE MASK DETECTED</p>'
+      document.getElementById('result_fail').innerHTML='<p></p>'
     }
     else{
-        document.getElementById('result_fail').innerHTML='<p>NOT DETECTED</p>'
+        document.getElementById('result_fail').innerHTML='<p>FACE MASK NOT DETECTED</p>'
+        document.getElementById('result_pass').innerHTML='<p></p>'
         image.src = previous_url
       }
     }
